@@ -1,0 +1,97 @@
+# Lists & Tuples - allow us to work with sequential data
+# Sets - unordered collections of values with no duplicates
+
+courses = ['History', 'Math', 'Physics', 'CompSci']
+courses2 = ['PoliSci', 'PE']
+
+nums = [1, 5, 2, 4, 3]
+
+courses.append('Art')
+
+courses.insert(0, 'Culinary Arts')
+
+courses.extend(courses2)
+
+# sorted_nums = sorted(nums)
+
+# courses.sort(reverse=True)
+# nums.sort(reverse=True)
+
+print(courses)
+print(len(courses))
+print(courses[0])
+print(courses[3])
+print(courses[-1])
+print(courses[0:2])
+print(courses[:3])
+print(courses[2:])
+print(min(nums))
+print(max(nums))
+print(sum(nums))
+
+
+
+courses = ['Histoy', 'Math', 'Physics', 'CompSci']
+
+for index, item in enumerate(courses, start=1):
+	print(index, item)
+
+
+
+courses = ['Histoy', 'Math', 'Physics', 'CompSci']
+
+course_str = ' - '.join(courses)
+
+new_list = course_str.split(' - ')
+
+print(course_str)
+print(new_list)
+
+
+
+# Mutable
+# list_1 = ['Histoy', 'Math', 'Physics', 'CompSci']
+# list_2 = list_1
+
+# print(list_1)
+# print(list_2)
+
+# list_1[0] = 'Art'
+
+# print(list_1)
+# print(list_2)
+
+# Immutable
+tuple_1 = ('Histoy', 'Math', 'Physics', 'CompSci')
+tuple_2 = tuple_1
+
+print(tuple_1)
+print(tuple_2)
+
+tuple_1[0] = 'Art'
+
+print(tuple_1)
+print(tuple_2)
+
+
+
+cs_courses = {'Histoy', 'Math', 'Physics', 'CompSci'}
+art_courses = {'Histoy', 'Math', 'Art', 'Design'}
+
+print(cs_courses.intersection(art_courses))
+print(cs_courses.difference(art_courses))
+print(cs_courses.union(art_courses))
+
+
+
+# Empty Lists
+empty_list = []
+empty_list = list()
+
+# Empty Tuples
+empty_tuple = ()
+empty_tuple = tuple()
+
+# Empty Sets
+empty_set = {} #This is incorrect! Will create a dictionary.
+empty_set = set()
