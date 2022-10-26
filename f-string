@@ -1,8 +1,0 @@
-greeting = 'Hello'
-name = 'Gigi'
-
-message = f'{greeting}, {name.upper()}. Welcome!'
-
-
-
-print(message)
