@@ -1,4 +1,0 @@
-greeting = 'Hello'
-name = 'Gigi'
-
-print(help(str.lower))
